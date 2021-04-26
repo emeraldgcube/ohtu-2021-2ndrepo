@@ -16,9 +16,8 @@ class Varasto:
 
         return None
 
-    def saldo(self, id):
-        print ("pieru")
-        tuote = self.hae_tuote(id)
+    def saldo(self, keilapallo):
+        tuote = self.hae_tuote(keilapallo)
 
         return self._saldot[tuote]
 

@@ -19,7 +19,6 @@ class Kauppa:
         self._varasto.palauta_varastoon(tuote)
 
     def lisaa_koriin(self, tuote_id):
-        print (tuote_id)
         tsekki=self._varasto.saldo(self._varasto, tuote_id)
         print (tsekki)
         if tsekki > 0:
