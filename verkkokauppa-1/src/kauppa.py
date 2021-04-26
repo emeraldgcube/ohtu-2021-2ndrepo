@@ -19,10 +19,10 @@ class Kauppa:
         self._varasto.palauta_varastoon(tuote)
 
     def lisaa_koriin(self, tuote_id):
-        tsekki=self._varasto.saldo(self._varasto, tuote_id)
+        tsekki=self._varasto.saldo(tuote_id)
         print (tsekki)
         if tsekki > 0:
-            tuote = self._varasto.hae_tuote(self._varasto, tuote_id)
+            tuote = self._varasto.hae_tuote(tuote_id)
             self._ostoskori.lisaa(tuote)
             self._varasto.ota_varastosta(tuote)
 
